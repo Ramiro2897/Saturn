@@ -11,13 +11,13 @@ body {
  width: 100%;
  height: 100vh;
  background-color: rgb(29, 29, 27);
+ overflow: hidden;
 }
 
 .contenedor {
   width: 100%;
   height: 50px;
   margin-top: 20px;
-  border: 2px solid red;
   display: flex;
 }
 
@@ -32,8 +32,10 @@ header {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  border: 2px solid red;
   margin-left: 30px;
+  background-image: url(universe.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 .opciones{
@@ -42,15 +44,102 @@ header {
   display: flex;
   justify-content: center;
   padding: 8px;
-  border: 2px solid red;
-  margin-left: 20px;
+  /* border: 1px solid rgb(216, 194, 194); */
+  margin-left: 60px;
 } 
 
 .opciones a{
   color: #fff;
-  padding: 4px;
+  margin-left: 50px;
   font-size: 14px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+.opciones a:hover{
+  color: #be4747;
+}
+
+.contacto{
+  margin-left: 180px;
+}
+
+.contacto a{
+  width: 200px;
+  height: auto;
+  margin: 5px;
+  color: #fff;
+}
+
+.contenedor-varios{
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+}
+
+.texto {
+  width: 50%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 80px;
+}
+
+.texto h3{
+  color: #fff;
+  font-size: 17px;
+  letter-spacing: 1px;
+  word-spacing: 6px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.texto .boton{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.texto .boton button{
+  padding: 8px 10px;
+  background-color: #e62929;
+  color: #fff;
+  outline: none;
+  border: none;
+  border-radius: 4px;
+  margin: 20px 0 0 0px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.texto .boton button:hover{
+  background-color: #790909;
+}
+
+
+.imagen-flotante {
+  width: 400px;
+  height: auto;
+  background-image: url('img-1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  animation: oscilar 4s infinite alternate;
+}
+
+@keyframes oscilar {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-10px); /* Cambia el valor para ajustar la altura del movimiento */
+  }
+}
+
+
+
 
 
